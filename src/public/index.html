@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="general">
+        <div name="grosor">
+            Selecciona un grosor: <select name="valorgrosor" id="valorgrosor">
+               <option value="1">1</option>
+               <option value="2" selected >2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option>
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+            </select>
+        </div>
+        <div name="color">
+            Selecciona un color: <select name="valorcolor" id="valorcolor">
+               <option value="red">rojo</option>
+               <option value="green">verde</option>
+               <option value="yellow">amarillo</option>
+               <option value="black">negro</option>
+               <option value="pink">rosado</option>
+               <option value="blue">azul</option>
+            </select>
+        </div>
+        <div name="opcion" id="opcion">
+            Selecciona un color: <select name="pintar" id="pintar">
+               <option value="pincel">pincel</option>
+               <option value="borrador">borrador</option>
+        </select>
+        </div>
+        <div>
+            <button id="limpiar">Limpiar</button>
+        </div>
+    </div>
+    <canvas id="drawing">
+
+    </canvas>
+    <script src="/socket.io/socket.io.js" ></script>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>
