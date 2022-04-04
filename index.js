@@ -15,7 +15,7 @@ app.set('port', process.env.PORT || 3000);
 require('./sockets')(io);
 
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, './src/public')));
 
 
 server.listen(app.get('port'), () => {
